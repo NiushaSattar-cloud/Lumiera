@@ -2,6 +2,7 @@
     --D-main-color:#654797;
     --D-Complementary-color:#FBB911;
     --D-light-color:#EEEBF3;
+    --D-overlay:#664797a9;
 
     --N-main-color:#362664;
     --N-Complementary-color:#D19A0F;
@@ -58,6 +59,7 @@ body{
     cursor: pointer;
     z-index: 10000;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .circle-candle:hover{
@@ -245,3 +247,149 @@ i{
 }
 
 
+
+
+
+/* section 2 */
+
+#section-2{
+    border: 1px solid palevioletred;
+    height: 650px;
+    display: grid;
+    grid-template-areas: 
+    'one two'
+    'three four';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-top: 50px;
+}
+
+#item1, #item2, #item3, #item4{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#item1{
+    grid-area: one;
+    background-color: var(--D-main-color);
+    color: var(--D-light-color);
+}
+
+#item1 h2{
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+#item1 p{
+    font-weight: normal;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+#section-2 .container{
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+#item2, #item2>img{
+    grid-area: two;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    color: var(--D-light-color);
+}
+
+#item2>img, #item3>img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: var(--D-overlay);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#item2:hover .overlay {
+    opacity: 1;
+}
+
+#item2:hover .overlay-text{
+    bottom: 40px;
+}
+
+.overlay-text{
+    width: 60%;
+    position: absolute;
+    bottom: -200px;
+    transition: all 0.5s;
+}
+
+.overlay-text>h3{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-white {
+    width: 150px;
+    height: 40px;
+    background-color: var(--D-light-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--D-main-color);
+    font-size: 20px; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-white:hover{
+    box-shadow: 0 0 15px var(--D-light-color);
+}
+
+
+
+#item4{
+    grid-area: four;
+    background-color: var(--D-light-color);
+    color: var(--D-main-color);
+    display: flex;
+    position: relative;
+}
+
+#item4>.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#item3, #item3>img{
+    grid-area: three;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    color: var(--D-light-color);
+}
+
+#item3:hover .overlay {
+    opacity: 1;
+}
+
+#item3:hover .overlay-text{
+    bottom: 40px;
+}
