@@ -1,0 +1,115 @@
+:root{
+    --D-main-color:#654797;
+    --D-Complementary-color:#FBB911;
+    --D-light-color:#EEEBF3;
+
+    --N-main-color:#362664;
+    --N-Complementary-color:#D19A0F;
+    --N-light-color:#211E26;
+}
+
+@font-face{
+    font-family: Arsenal SC;
+    font-weight: normal;
+    src: url("../Fonts/ArsenalSC-Regular.ttf") format(truetype);
+}
+
+@font-face{
+    font-family: Arsenal SC;
+    font-weight: bold;
+    src: url("../Fonts/ArsenalSC-Bold.ttf") format(truetype);
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    direction: ltr;
+    color: var(--D-main-color);
+    font-family: 'Arsenal SC', sans-serif;
+
+    height: 1600px;
+}
+
+
+
+
+/* header */
+
+#main-header{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 80px;
+    background-color: var(--D-main-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px #3526646a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.container{
+    border: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 60px;
+    position: relative;
+}
+
+#main-header>.container {
+    height: 100%;
+    display: flex;
+}
+
+.logo>img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#main-menu{
+    border: 1px solid black;
+    width: 60%;
+    list-style: none;
+    list-style-type: none;
+    gap: 40px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#main-menu:nth-child(1) {
+    gap: 0;
+}
+
+#main-menu>li>a,
+#main-menu>li>a:visited,
+#main-menu>li>a:link {
+    color: var(--D-light-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bar{
+    border: 1px solid black;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i{
+    color: var(--D-light-color);
+    font-size: 30px;
+}
