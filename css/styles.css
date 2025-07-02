@@ -42,8 +42,6 @@ body{
     direction: ltr;
     color: var(--D-main-color);
     font-family: 'Arsenal SC', sans-serif;
-
-    height: 1600px;
 }
 
 
@@ -59,6 +57,11 @@ body{
     /* filter: drop-shadow(0 0 3px #3526646a); */
     cursor: pointer;
     z-index: 10000;
+    transition: all 0.5s;
+}
+
+.circle-candle:hover{
+    filter: drop-shadow(0 0 8px #3526646a);
 }
 
 
@@ -168,7 +171,7 @@ i{
 /* section 1 */
 
 #section-1{
-    border: 1px solid palevioletred;
+    /* border: 1px solid palevioletred; */
     height: 650px;
 }
 
@@ -177,18 +180,68 @@ i{
 }
 
 #sec1-left{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 60%;
     height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #sec1-right{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 40%;
     height: 650px;
     background-image: url("../img/candle-on1.png");
     background-size: contain;
-    animation: candle-on 1s steps(1) infinite;
+    animation: candle-on 1s infinite;
     
 }
+
+#main-text{
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-text>h1{
+    color: #422B73;
+    font-weight: bold;
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+#main-text>h3{
+    width: 50%;
+    font-weight: normal;
+    color: var(--D-main-color);
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-yellow {
+    width: 200px;
+    height: 50px;
+    background-color: var(--D-Complementary-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 30px; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-yellow:hover{
+    box-shadow: 0 0 15px var(--D-Complementary-color);
+}
+
 
