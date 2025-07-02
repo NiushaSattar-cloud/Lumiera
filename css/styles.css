@@ -21,6 +21,16 @@
 }
 
 
+@keyframes candle-on {
+    0%, 50% {
+        background-image: url("../img/candle-on1.png");
+      }
+      50.01%, 100% {
+        background-image: url("../img/candle-on2.png");
+      }
+}
+
+
 
 
 * {
@@ -36,6 +46,20 @@ body{
     height: 1600px;
 }
 
+
+
+
+
+.circle-candle{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    /* filter: drop-shadow(0 0 3px #3526646a); */
+    cursor: pointer;
+    z-index: 10000;
+}
 
 
 
@@ -67,16 +91,23 @@ body{
 #main-header>.container {
     height: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
-.logo>img{
-    width: 100%;
+.left-side{
+    /* border: 1px solid black; */
+    width: 60%;
+    display: flex;
+}
+
+.logo{
+    /* border: 1px solid black; */
     height: 100%;
-    border: 1px solid black;
+    cursor: pointer;
 }
 
 #main-menu{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 60%;
     list-style: none;
     list-style-type: none;
@@ -101,7 +132,7 @@ body{
 }
 
 .bar{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
     width: 60px;
     display: flex;
@@ -112,4 +143,52 @@ body{
 i{
     color: var(--D-light-color);
     font-size: 30px;
+    cursor: pointer;
 }
+
+#main-menu a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1.7px;
+    background-color: white;
+    transition: all 0.2s;
+    margin-top: 5px;
+    border-radius: 999px;
+}
+
+#main-menu a:hover::after {
+    content: "";
+    width: 110%;
+}
+
+
+
+
+/* section 1 */
+
+#section-1{
+    border: 1px solid palevioletred;
+    height: 650px;
+}
+
+#section-1>.container{
+    display: flex;
+}
+
+#sec1-left{
+    border: 1px solid black;
+    width: 60%;
+    height: 650px;
+}
+
+#sec1-right{
+    border: 1px solid black;
+    width: 40%;
+    height: 650px;
+    background-image: url("../img/candle-on1.png");
+    background-size: contain;
+    animation: candle-on 1s steps(1) infinite;
+    
+}
+

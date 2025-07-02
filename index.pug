@@ -20,12 +20,14 @@ html(lang="en")
 
     body 
 
+        .candle 
+            img.circle-candle(src="img/circle-candle-on.png", alt="")
+
         header#main-header 
             .container
                 .left-side
-                    a(href="#" class="logo")
-                    img(src="img/logo2.png", alt="")
-
+                    a(href="#")
+                        img.logo(src="img/logo2.png", alt="")
                     ul#main-menu
                         li 
                             a(href="#") Home
@@ -33,7 +35,11 @@ html(lang="en")
                             a(href="#") Contact us
                         li
                             a(href="#") Latest products
-
-                
                 .bar   
                     i.fa-solid.fa-bars
+
+        section#section-1
+            .container
+                #sec1-left
+                #sec1-right
+                
