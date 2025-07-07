@@ -7,6 +7,8 @@
     --N-main-color: #362664;
     --N-Complementary-color: #D19A0F;
     --N-light-color: #211E26;
+    --N-overlay:#352664b9;
+    --N-shadow:#1b103b;
 }
 
 @font-face {
@@ -82,7 +84,7 @@ body {
     position: sticky;
     top: 0;
     left: 0;
-    box-shadow: 0 0 10px #3526646a;
+    box-shadow: 0 0 10px #352664a0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,4 +550,5 @@ i {
     border: 1px solid palevioletred;
     min-height: 650px;
     margin-top: 50px;
+    /* background-color: var(--D-main-color); */
 }
