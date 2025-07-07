@@ -7,8 +7,8 @@
     --N-main-color: #362664;
     --N-Complementary-color: #D19A0F;
     --N-light-color: #211E26;
-    --N-overlay:#352664b9;
-    --N-shadow:#1b103b;
+    --N-overlay: #352664b9;
+    --N-shadow: #1b103b;
 }
 
 @font-face {
@@ -481,6 +481,11 @@ i {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.product-items:hover {
+    filter: drop-shadow(0 0 5px #fbb91189);
 }
 
 .product-items>img {
@@ -548,7 +553,62 @@ i {
 
 #section-4 {
     border: 1px solid palevioletred;
-    min-height: 650px;
+    min-height: 600px;
     margin-top: 50px;
-    /* background-color: var(--D-main-color); */
+    background-color: var(--D-main-color);
+    display: flex;
+}
+
+#section-4>.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sec4-left, #sec4-right {
+    /* border: 1px solid white; */
+}
+
+#sec4-left{
+    width: 500px;
+    height: 500px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    background-image: url("../img/candle-pic1.jfif");
+    background-size: cover;
+}
+
+#sec4-right{
+    width: 750px;
+    height: 500px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--D-light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-4 .title>h2{
+    text-align: left;
+    margin-top: 0;
+}
+
+.text-box{
+    /* border: 1px solid black; */
+    width: 85%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box p{
+    width: 60%;
+    font-size: 22px;
+    margin-top: -20px;
+}
+
+#section-4 .btn-yellow{
+    margin: 0;
 }
