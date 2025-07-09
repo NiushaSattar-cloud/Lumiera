@@ -23,6 +23,7 @@ html(lang="en")
         .candle#candle
             img.circle-candle#circle-candle(src="img/circle-candle-on.png", alt="")
 
+        nav#main-navbar 
         header#main-header 
             .container
                 .left-side
@@ -35,8 +36,11 @@ html(lang="en")
                             a(href="#") Contact us
                         li
                             a(href="#section-3") Latest products
-                .bar   
-                    i.fa-solid.fa-bars
+                .bar 
+                    input(type="checkbox").checkbox#check
+                    //- بعدش باید اینو هیدن کنم همینجا
+                    label(for="check").menu 
+                        i.fa-solid.fa-bars
 
         section#section-1
             .container
@@ -109,7 +113,7 @@ html(lang="en")
                         .candle-info
                             h3 Lemon candle
                             h4 $24.99
-                a.btn-purple Show Me More
+                a.btn-purple#btn-purple Show Me More
 
         section#section-4 
             .container
@@ -117,30 +121,30 @@ html(lang="en")
                 #sec4-right
                     .text-box
                         .title
-                            h2 How to make the best choice?
+                            h2#sec4-title How to make the best choice?
 
-                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut   
-                        a.btn-yellow Shop Now
+                        p#sec4-p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut   
+                        a.btn-yellow#btn-yellow2 Shop Now
 
         section#section-5
             .container 
                     .title 
-                        h2#title1 Lumièra Services
-                        .line-with-circles
+                        h2#title2 Lumièra Services
+                        .line-with-circles#line-with-circles2
 
                     #service-wrapper
                         .service-item
                             .serv-circle
                             i.fa-solid.fa-comments
-                            h3.title 24/7 Support
+                            h3.title.serv-title 24/7 Support
                         .service-item
                             .serv-circle
                             i.fa-solid.fa-store
-                            h3.title Purchase in person
+                            h3.title.serv-title Purchase in person
                         .service-item
                             .serv-circle
                             i.fa-solid.fa-truck
-                            h3.title Secure Delivery
+                            h3.title.serv-title Secure Delivery
 
         footer#main-footer
             .container
