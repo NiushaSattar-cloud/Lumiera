@@ -23,7 +23,8 @@ html(lang="en")
         .candle#candle
             img.circle-candle#circle-candle(src="img/circle-candle-on.png", alt="")
 
-        nav#main-navbar 
+        input(type="checkbox" hidden).checkbox#check
+
         header#main-header 
             .container
                 .left-side
@@ -37,10 +38,34 @@ html(lang="en")
                         li
                             a(href="#section-3") Latest products
                 .bar 
-                    input(type="checkbox").checkbox#check
                     //- بعدش باید اینو هیدن کنم همینجا
-                    label(for="check").menu 
+                    label(for="check").menu
                         i.fa-solid.fa-bars
+
+       
+        nav#main-navbar 
+            .nav-right#nav-right
+                .container
+                    h2.title Main Menu
+                    ul.bar-menu
+                        li
+                            a(href="#") Home
+                            .bar-line
+                        li
+                            a(href="#") Your profile
+                            .bar-line
+                        li
+                            a(href="#") Contact Us
+                            .bar-line
+                        li
+                            a(href="#") Our Procuts
+                            .bar-line
+                        li
+                            a(href="#") Latest Products
+                            .bar-line
+
+
+                       
 
         section#section-1
             .container

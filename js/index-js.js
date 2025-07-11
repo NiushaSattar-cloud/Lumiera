@@ -33,6 +33,8 @@ const servTitle = document.querySelectorAll('.serv-title');
 
 const footer = document.getElementById('main-footer')
 
+const navRight= document.getElementById('nav-right')
+
 
 
 
@@ -138,6 +140,8 @@ candleBtn.onclick = function () {
 
         footer.style.background = nMAinColor;
 
+        navRight.style.backgroundColor=nOverlay;
+
         on = false
     }
 
@@ -189,6 +193,8 @@ candleBtn.onclick = function () {
         });
 
         footer.style.background = dMainColor;
+
+        navRight.style.backgroundColor=dOverlay;
 
 
         on = true
@@ -247,6 +253,8 @@ mainCandle.onclick = function () {
 
         footer.style.background = nMAinColor;
 
+        navRight.style.backgroundColor=nOverlay;
+
         on = false
     }
 
@@ -298,6 +306,8 @@ mainCandle.onclick = function () {
         });
 
         footer.style.background = dMainColor;
+
+        navRight.style.backgroundColor=dOverlay;
 
 
         on = true

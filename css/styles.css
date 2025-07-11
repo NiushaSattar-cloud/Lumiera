@@ -167,18 +167,100 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99999;
 }
 
-.bar>i {
+.bar label {
+    position: relative;
+    z-index: 99999;
+}
+
+.bar i {
     color: var(--D-light-color);
     font-size: 30px;
     cursor: pointer;
+    position: relative;
+    z-index: 99999;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
 }
 
 #main-navbar {
     position: relative;
-    z-index: 200;
-  }
+    display: flex;
+}
+
+.nav-right {
+    z-index: 20000;
+    /* border: 1px solid black; */
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -50vw;
+    background-color: var(--D-overlay);
+    filter: drop-shadow(0 0 8px #3526646a);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.nav-right>.container {
+    text-align: left;
+    color: var(--D-light-color);
+}
+
+.nav-right h2 {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.bar-menu {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.bar-menu a {
+    text-decoration: none;
+    color: var(--D-light-color);
+    font-size: 22px;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+
+.bar-menu a:hover {
+    letter-spacing: 2px;
+}
+
+.bar-menu>i {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.bar-line {
+    width: 90%;
+    height: 2px;
+    background-color: var(--D-light-color);
+    margin-top: 5px;
+}
+
+#check:checked ~ #main-navbar .nav-right {
+    right: 0vw;
+}
+
+#check:checked ~ header .menu i {
+    transform: rotate(90deg);
+    
+}
+
+
+
+
+
+
 
 
 /* section 1 */
@@ -689,7 +771,7 @@ body {
     justify-content: center;
 }
 
-#main-footer>.container{
+#main-footer>.container {
     display: flex;
 }
 
@@ -705,23 +787,23 @@ body {
     height: 100%;
 }
 
-.footer-text{
+.footer-text {
     /* border: 1px solid white; */
     height: 250px;
     width: 700px;
 }
 
-.footer-text h2.title{
-    color:var(--D-light-color);
+.footer-text h2.title {
+    color: var(--D-light-color);
     font-size: 35px;
 }
 
-.footer-text h4.title{
+.footer-text h4.title {
     color: var(--D-light-color);
     font-size: 25px;
 }
 
-#service>li{
+#service>li {
     margin-bottom: 10px;
     font-size: 20px;
 }
