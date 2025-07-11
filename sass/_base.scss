@@ -1,0 +1,46 @@
+$D-main-color: #654797;
+$D-Complementary-color: #FBB911;
+$D-light-color: #EEEBF3;
+$D-overlay: #664797a9;
+
+$N-main-color: #362664;
+$N-Complementary-color: #D19A0F;
+$N-light-color: #211E26;;
+$N-overlay: #352664b9;
+$N-shadow: #1b103b;
+
+
+@font-face {
+    font-family: Arsenal SC;
+    font-weight: normal;
+    src: url("../Fonts/ArsenalSC-Regular.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Arsenal SC;
+    font-weight: bold;
+    src: url("../Fonts/ArsenalSC-Bold.ttf") format(truetype);
+}
+
+@keyframes candle-on {
+
+    0%,
+    50% {
+        background-image: url("../img/candle-on1.png");
+    }
+
+    50.01%,
+    100% {
+        background-image: url("../img/candle-on2.png");
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: ltr;
+    color: var(--D-main-color);
+    font-family: 'Arsenal SC', sans-serif;
+}
