@@ -18,7 +18,7 @@
 
 #main-header {
     width: 100%;
-    height: 80px;
+    height: 120px;
     background-color: $D-main-color;
     position: sticky;
     top: 0;
@@ -26,6 +26,48 @@
     box-shadow: 0 0 10px #352664a0;
     @extend %flexCenter;
     z-index: 10000;
+    display: flex;
+    flex-direction: column;
+
+
+    #short-header {
+        width: 100%;
+        background-color: $N-main-color;
+        height: 25px;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #short-menu {
+            width: 95%;
+            // border: 1px solid black;
+            margin-top: 10px;
+            list-style: none;
+            list-style-type: none;
+            margin-left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 50px;
+            a {
+                color: $D-light-color;
+                text-decoration: none;
+                font-size: 14px;
+
+                &:visited {
+                    color: $D-light-color;
+                    text-decoration: none;
+                }
+
+                &:link {
+                    color: $D-light-color;
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
 
     .container {
         height: 100%;
@@ -227,9 +269,9 @@
             animation: candle-on 1s infinite;
             position: relative;
 
-            .clickOnMe{
+            .clickOnMe {
                 position: absolute;
-                right:100px;
+                right: 100px;
                 top: 80px;
                 color: $D-main-color;
                 transform: rotate(30deg);
@@ -642,13 +684,13 @@
                 font-size: 25px;
             }
 
-            #service{
+            #service {
                 li {
                     margin-bottom: 10px;
                     font-size: 20px;
                 }
             }
-            
+
         }
     }
 }
