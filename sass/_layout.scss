@@ -381,25 +381,25 @@
                 max-width: 550px;
                 margin: 20px auto;
 
-                &::before,
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 14px;
-                    height: 14px;
-                    background-color: $D-light-color;
-                    border-radius: 50%;
-                }
+                // &::before,
+                // &::after {
+                //     content: "";
+                //     position: absolute;
+                //     top: 50%;
+                //     transform: translateY(-50%);
+                //     width: 14px;
+                //     height: 14px;
+                //     background-color: $D-light-color;
+                //     border-radius: 50%;
+                // }
 
-                &::before {
-                    left: 0;
-                }
+                // &::before {
+                //     left: 0;
+                // }
 
-                &::after {
-                    right: 0;
-                }
+                // &::after {
+                //     right: 0;
+                // }
             }
         }
 

@@ -331,22 +331,6 @@ body {
   max-width: 550px;
   margin: 20px auto;
 }
-#section-3 .container .title .line-with-circles::before, #section-3 .container .title .line-with-circles::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-  background-color: #EEEBF3;
-  border-radius: 50%;
-}
-#section-3 .container .title .line-with-circles::before {
-  left: 0;
-}
-#section-3 .container .title .line-with-circles::after {
-  right: 0;
-}
 #section-3 .container #products-wrapper {
   width: 90%;
   height: 700px;

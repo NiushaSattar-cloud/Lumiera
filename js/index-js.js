@@ -200,6 +200,10 @@ candleBtn.onclick = function () {
         on = true
     }
 
+    else{
+        console.log("its not working")
+    }
+
 }
 
 mainCandle.onclick = function () {
