@@ -5,7 +5,8 @@ $D-overlay: #664797a9;
 
 $N-main-color: #362664;
 $N-Complementary-color: #D19A0F;
-$N-light-color: #211E26;;
+$N-light-color: #211E26;
+;
 $N-overlay: #352664b9;
 $N-shadow: #1b103b;
 
@@ -32,6 +33,21 @@ $N-shadow: #1b103b;
     50.01%,
     100% {
         background-image: url("../img/candle-on2.png");
+    }
+}
+
+@keyframes click {
+
+    0%{
+        transform: translateY(0) rotate(25deg);
+    }
+
+    50%{
+        transform: translateY(50px)  rotate(25deg);
+    }
+
+    100%{
+        transform: translateY(0)  rotate(25deg);
     }
 }
 

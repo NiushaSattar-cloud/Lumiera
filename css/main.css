@@ -16,6 +16,17 @@
     background-image: url("../img/candle-on2.png");
   }
 }
+@keyframes click {
+  0% {
+    transform: translateY(0) rotate(25deg);
+  }
+  50% {
+    transform: translateY(50px) rotate(25deg);
+  }
+  100% {
+    transform: translateY(0) rotate(25deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -212,8 +223,19 @@ body {
   width: 40%;
   height: 650px;
   background-image: url("../img/candle-on1.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   animation: candle-on 1s infinite;
+  position: relative;
+}
+#section-1 .container #sec1-right .clickOnMe {
+  position: absolute;
+  right: 100px;
+  top: 80px;
+  color: #654797;
+  transform: rotate(30deg);
+  animation: click 5s infinite ease-in-out;
 }
 
 /* section 2 */

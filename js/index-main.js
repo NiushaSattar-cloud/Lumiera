@@ -7,6 +7,7 @@ const mainCandle = document.getElementById('sec1-right')
 const mainTitle = document.getElementById('mainTitle')
 const mainShortText = document.getElementById('mainShortText')
 const btnYellow = document.getElementById('btn-yellow')
+const clickOnMe =document.getElementById('clickOnMe')
 
 const item1 = document.getElementById('item1')
 const item4 = document.getElementById('item4')
@@ -77,6 +78,8 @@ var on = true
 
 
 function turnOffCandle() {
+    // to turn off
+
     document.body.style.backgroundColor = nBgColor
     candleBtnImg.src = "img/circle-candle-off.png";
     mainCandle.style.setProperty('background-image', "url('img/candle-off.png')", 'important');
@@ -87,6 +90,7 @@ function turnOffCandle() {
     mainTitle.style.color = dLightColor
     mainShortText.style.color = dLightColor
     btnYellow.style.backgroundColor = nComColor
+    clickOnMe.style.color = dLightColor
 
     item1.style.backgroundColor = nMAinColor
     item4.style.backgroundColor = nLightColor
@@ -122,6 +126,8 @@ function turnOffCandle() {
 }
 
 function turnOnCandle() {
+    // to turn on
+
     document.body.style.backgroundColor = dBgColor
     candleBtnImg.src = "img/circle-candle-on.png";
     mainCandle.style.setProperty('background-image', "url('img/candle-on1.png')");
@@ -131,6 +137,7 @@ function turnOnCandle() {
     mainTitle.style.color = nMAinColor
     mainShortText.style.color = dMainColor
     btnYellow.style.backgroundColor = dComColor
+    clickOnMe.style.color = dMainColor
 
     item1.style.backgroundColor = dMainColor
     item4.style.backgroundColor = dLightColor

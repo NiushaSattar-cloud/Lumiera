@@ -221,8 +221,20 @@
             width: 40%;
             height: 650px;
             background-image: url("../img/candle-on1.png");
+            background-repeat: no-repeat;
+            background-position: center;
             background-size: contain;
             animation: candle-on 1s infinite;
+            position: relative;
+
+            .clickOnMe{
+                position: absolute;
+                right:100px;
+                top: 80px;
+                color: $D-main-color;
+                transform: rotate(30deg);
+                animation: click 5s infinite ease-in-out;
+            }
         }
     }
 }
